@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <meta name ="author" content ="Abel Busto Dopazo" />
+    <meta name ="description" content ="Descripcion y caracteristicas del Framework Laravel" />
+    <meta name ="keywords" content ="Laravel, Framework"/>
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+    <title>¡Deja tu opinión!</title>
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css"/>
+	<link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+</head>
+
+<body>
+    <header>
+		<h1> Framework Laravel </h1>
+		<picture>
+			<img src="multimedia/images/Logo.png" alt=Logo/>
+		</picture>
+	</header>
+	
+	<nav>
+		<ul>
+			<li><a title="inicio" href="index.html" accesskey="i" tabindex="1">Inicio</a></li>
+			<li><a title="descripcion" href="funcionamiento.html" accesskey="d" tabindex="2">Funcionamiento</a></li>
+			<li><a title="caracteristicas" href="caracteristicas.html" accesskey="c" tabindex="3">Características</a></li>
+			<li><a title="lenguaje" href="lenguaje.html" accesskey="l" tabindex="4">Lenguaje</a></li>
+			<li><a title="versiones" href="versiones.html" accesskey="v" tabindex="5">Versiones</a></li> 
+			<li><a title="opinion"  href="opinion.html" accesskey="o" tabindex="6">Reseñas</a></li> 
+		</ul>
+	</nav>
+	
+	<article>
+		<h2>¿Qué opinas del Framework Laravel?</h2>
+		<section>
+			<h3>Reseña</h3>
+			<p> Con el fin de mejorar el Framework Laravel puede rellenar el formulario y se tendrá en cuenta su opinión. </p>
+			
+			<form name="datos"> 
+				<fieldset> 
+					<legend> Datos personales </legend>
+						<p>Nombre<input type="text"></p>
+						<p>Apellidos<input type="text"></p>
+						<p>Fecha nacimiento<input type="date"></p>
+						<p>E-mail<input type="email"></p>
+				</fieldset>
+				<fieldset>
+					<legend> Reseña </legend>
+						<p><label>¿Qué tipo de usuario eres?</label></p>
+						<label><input type="radio" name="option" value="Experimentado">Experimentado</label>
+						<label><input type="radio" name="option" value="Medio">Medio</label>
+						<label><input type="radio" name="option" value="Novel">Novel</label>
+						<p><label>¿Cuál ha sido tu experiencia con Laravel?</label></p>
+						<p><textarea cols="40" rows="6" ></textarea>
+				</fieldset>
+				<p><input type="button" value="¡Haznos llegar tu opinión!"> 
+			</form>
+		</section>
+	</article>
+    <footer>
+		<a>Contactanos: sewlaravel@prueba.com</a>
+		<a title="Fuentes" href="bibliografia.html">Fuentes</a>
+    </footer>
+
+</body>
+</html>		

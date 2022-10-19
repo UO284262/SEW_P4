@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <meta name ="author" content ="Abel Busto Dopazo" />
+    <meta name ="funcionamiento" content ="Funcionamiento de Laravel" />
+    <meta name ="keywords" content ="Laravel, Framework"/>
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+    <title>Funcionamiento</title>
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+	<link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+</head>
+
+<body>
+	<header>
+		<h1> Framework Laravel </h1>
+		<picture>
+			<img src="multimedia/images/Logo.png" alt=Logo/>
+		</picture>
+	</header>
+	
+	<nav>
+		<ul>
+			<li><a title="inicio" href="index.html" accesskey="i" tabindex="1">Inicio</a></li>
+			<li><a title="descripcion" href="funcionamiento.html" accesskey="d" tabindex="2">Funcionamiento</a></li>
+			<li><a title="caracteristicas" href="caracteristicas.html" accesskey="c" tabindex="3">Características</a></li>
+			<li><a title="lenguaje" href="lenguaje.html" accesskey="l" tabindex="4">Lenguaje</a></li>
+			<li><a title="versiones" href="versiones.html" accesskey="v" tabindex="5">Versiones</a></li> 
+			<li><a title="opinion"  href="opinion.html" accesskey="o" tabindex="6">Reseñas</a></li> 
+		</ul>
+	</nav>
+	
+	<article>
+	
+		<h2> ¿Cómo funciona Laravel?</h2>
+		
+		<section>
+			<h3>Funcionamiento de Laravel</h3>
+			<p>Para entender mejor lo que Laravel puede hacer, es importante entender cómo Laravel trata las solicitudes, 
+			por ejemplo, el ciclo de vida de las solicitudes. Como se ha comentado anteriormente, 
+			Laravel se basa en la arquitectura MVC, y responde a las solicitudes de los usuarios, 
+			que el controlador utiliza para recuperar y procesar los datos del modelo y presentar la información al usuario en una vista.</p>
+
+			<p>Una solicitud entra en una aplicación Laravel a través del archivo public/index.php, 
+			que carga el resto del framework y recupera una instancia de la aplicación Laravel. 
+			Después de la recuperación de la instancia de la aplicación, la solicitud se dirige al núcleo de la consola o al núcleo HTTP.</p>
+
+			<p>Entre otras tareas, el kernel define una selección de bootstrappers que realizan tareas 
+			que deben ser completadas antes de que tenga lugar la gestión de las solicitudes, 
+			así como la definición de cualquier middleware por el que deban pasar las solicitudes antes de su gestión. 
+			Entre estas tareas previas a la gestión se encuentra la carga de los proveedores de servicios necesarios para la aplicación.</p>
+
+			<p>Una vez que se ha completado el bootstrapping y se han registrado los proveedores de servicios, 
+			la solicitud pasa al router, que dirige la solicitud a una ruta o a un controlador. 
+			Además, el router ejecuta cualquier middleware específico de la ruta que sea necesario. 
+			Una vez que la solicitud pasa por todo el middleware requerido, 
+			la ejecución de un método de ruta o controlador devuelve una respuesta que pasa de nuevo por la cadena a la Vista.</p>
+		</section>
+		
+		<section>
+			<h3>Podcast Laravel</h3>	
+			<p> A continuación un episodio del Podcast Laravel hablando con el creador sobre su framework. </p>
+			<img src="multimedia/images/LogoPodcast.jpg" alt="Logo Podcast"/>
+			<audio src = "multimedia/audio/podcast.mp3" controls autoplay></audio>
+			
+		</section>
+		
+	</article>
+	
+    <footer>
+		<a>Contactanos: sewlaravel@prueba.com</a>
+		<a title="Fuentes" href="bibliografia.html">Fuentes</a>
+    </footer>
+
+</body>
+</html>

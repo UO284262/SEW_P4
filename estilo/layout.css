@@ -1,0 +1,85 @@
+body {
+  display: grid;
+  grid-template-areas: 
+    "h h h a a a a a a a a a a a a"
+	"h h h a a a a a a a a a a a a"
+	"n n n a a a a a a a a a a a a"
+	"n n n a a a a a a a a a a a a"
+	"n n n a a a a a a a a a a a a"
+	"n n n a a a a a a a a a a a a"
+	"n n n a a a a a a a a a a a a"
+	"n n n a a a a a a a a a a a a"
+	"n n n a a a a a a a a a a a a"
+	"n n n a a a a a a a a a a a a"
+	"n n n a a a a a a a a a a a a"
+	"n n n a a a a a a a a a a a a"
+	"n n n a a a a a a a a a a a a"
+	"n n n a a a a a a a a a a a a"
+	"n n n a a a a a a a a a a a a"
+	"n n n a a a a a a a a a a a a"
+	"n n n a a a a a a a a a a a a"
+	"f f f f f f f f f f f f f f f";
+  grid-template-columns: repeat(15,1fr);  
+  
+}
+
+header{
+	grid-area: h;
+	display: grid;
+  	grid-template-areas:
+		"p p h1 h1 h1 h1"
+		"p p h1 h1 h1 h1";
+}
+
+nav {
+  grid-area: n;
+}
+article {
+  grid-area: a;
+  display: grid;
+  grid-template-areas: 
+  		"h1 h1 h1 h1 h1 h1 h1 h1 h1 h1 h1 h1"
+		"s  s  s  s  s  s  s  s  s  s  s  s "
+		"s  s  s  s  s  s  s  s  s  s  s  s "
+		"s  s  s  s  s  s  s  s  s  s  s  s "
+		"s  s  s  s  s  s  s  s  s  s  s  s "
+		"s  s  s  s  s  s  s  s  s  s  s  s "
+		"s  s  s  s  s  s  s  s  s  s  s  s "
+		"s  s  s  s  s  s  s  s  s  s  s  s "
+		"s  s  s  s  s  s  s  s  s  s  s  s "
+		"s  s  s  s  s  s  s  s  s  s  s  s "
+		"s  s  s  s  s  s  s  s  s  s  s  s "
+		"s  s  s  s  s  s  s  s  s  s  s  s "
+		"s  s  s  s  s  s  s  s  s  s  s  s "
+		"s  s  s  s  s  s  s  s  s  s  s  s "
+		"s  s  s  s  s  s  s  s  s  s  s  s "
+		"p  p  p  p  p  p  p  p  p  p  p  p "
+		"p  p  p  p  p  p  p  p  p  p  p  p "
+		"p  p  p  p  p  p  p  p  p  p  p  p ";
+	grid-template-columns: repeat(12,1fr); 	
+
+}
+
+header h1{
+	grid-area: h1;
+}
+
+header picture{
+	grid-area: p;
+}
+
+article h2{
+	grid-area: h1;
+}
+
+article section:last-of-type{
+	grid-area: p;
+}
+
+article section{
+	grid-area: s;
+}
+
+footer {
+  grid-area: f;
+}
