@@ -33,6 +33,7 @@ header{
 nav {
   grid-area: n;
 }
+
 article {
   grid-area: a;
   display: grid;
