@@ -41,21 +41,21 @@
 			<form name="datos"> 
 				<fieldset> 
 					<legend> Datos personales </legend>
-						<p><label>Nombre<input type="text"></label></p>
-						<p><label>Apellidos<input type="text"></label></p>
-						<p><label>Fecha nacimiento<input type="date"></label></p>
-						<p><label>E-mail<input type="email"></label></p>
+						<p><label for="nombre">Nombre: </label><input id="nombre" type="text"></p>
+						<p><label for="apellidos">Apellidos: </label><input id="apellidos" type="text"></p>
+						<p><label for="fecha">Fecha nacimiento: </label><input id="fecha" type="date"></p>
+						<p><label for="mail">E-mail: </label><input id="mail" type="email"></p>
 				</fieldset>
 				<fieldset>
 					<legend> Reseña </legend>
 						<p><label>¿Qué tipo de usuario eres?</label></p>
-						<p><label>Experimentado<input type="radio" name="option" value="Experimentado"></label></p>
-						<p><label>Medio<input type="radio" name="option" value="Medio"></label></p>
-						<p><label>Novel<input type="radio" name="option" value="Novel"></label></p>
-						<p><label>
-							<p>¿Cuál ha sido tu experiencia con Laravel?</p>
-							<textarea title="reseña" cols="40" rows="6" >Deja aquí tu opinión</textarea>
-							</label>
+						<p><input id="expe" type="radio" name="option" value="Experimentado"><label for="expe">Experimentado</label></p>
+						<p><input id="medio" type="radio" name="option" value="Medio"><label for="medio">Medio</label></p>
+						<p><input id="novel" type="radio" name="option" value="Novel"><label for="novel">Novel</label></p>
+						<p><label for="reseña">¿Cuál ha sido tu experiencia con Laravel?</label>
+							<p>
+								<textarea id="reseña" cols="40" rows="6" >Deja aquí tu opinión</textarea>
+							</p>
 						</p>
 				</fieldset>
 				<input type="button" value="¡Haznos llegar tu opinión!"> 
