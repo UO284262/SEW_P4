@@ -9,7 +9,7 @@ body {
   grid-template-areas: 
     "h a"
 	"n a";
-  grid-template-rows: 0.1fr;
+  grid-template-rows: repeat(2,0.1fr);
   column-gap: 1em;
 }
 
@@ -45,7 +45,7 @@ main {
   		"h1 h1"
 		"s s"
 		"p p";
-  grid-template-columns: repeat(2,1fr); 	
+  grid-template-columns: 1fr; 	
 
 }
 
@@ -58,7 +58,6 @@ main h2{
 /*Selector specificity (0,0,2)*/
 main section{
 	grid-area: s;
-	justify-self: center;
 }
 
 /*Selector specificity (0,1,2)*/
