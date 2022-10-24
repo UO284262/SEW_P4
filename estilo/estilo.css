@@ -51,17 +51,12 @@ nav ul li{
 }
 
 /*Selector specificity (0,0,1)*/
-article{
+main{
 	font-size: 1.2em;
 }
 
 /*Selector specificity (0,0,2)*/
-article h2{
-	text-align: center;
-}
-
-/*Selector specificity (0,0,2)*/
-article picture{
+main picture{
 	object-fit:scale-down;
 }
 

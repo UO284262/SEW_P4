@@ -7,9 +7,10 @@ Descripción de estilos
 body {
   display: grid;
   grid-template-areas: 
-    "h h h a a a a a a a a a a a a"
-	"n n n a a a a a a a a a a a a";
+    "h a"
+	"n a";
   grid-template-rows: 0.1fr;
+  column-gap: 1em;
 }
 
 /*Selector specificity (0,0,1)*/
@@ -17,8 +18,8 @@ header{
 	grid-area: h;
 	display: grid;
   	grid-template-areas:
-		"p p h1 h1 h1 h1"
-		"p p h1 h1 h1 h1";
+		"p h1"
+		"p h1";
 }
 
 /*Selector specificity (0,0,2)*/
@@ -37,7 +38,7 @@ nav {
 }
 
 /*Selector specificity (0,0,1)*/
-article {
+main {
   grid-area: a;
   display: grid;
   grid-template-areas: 
@@ -49,16 +50,18 @@ article {
 }
 
 /*Selector specificity (0,0,2)*/
-article h2{
+main h2{
 	grid-area: h1;
+	justify-self: center;
 }
 
 /*Selector specificity (0,0,2)*/
-article section{
+main section{
 	grid-area: s;
+	justify-self: center;
 }
 
 /*Selector specificity (0,1,2)*/
-article section:last-of-type{
+main section:last-of-type{
 	grid-area: p;
 }
