@@ -56,11 +56,11 @@ main h2{
 }
 
 /*Selector specificity (0,0,2)*/
-main section{
+main section:first-of-type{
 	grid-area: s;
 }
 
 /*Selector specificity (0,1,2)*/
-main section:last-of-type{
+main section{
 	grid-area: p;
 }
